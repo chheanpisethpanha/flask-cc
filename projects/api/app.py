@@ -47,6 +47,7 @@ def get_all_students():
 
 @app.route('/batch4', methods=['GET'])
 def batch4_name():
+    result = []
     if 'name' in request.args:
         name = request.args['name']
     else:

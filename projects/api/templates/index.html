@@ -16,8 +16,8 @@
         <h1>Search it :D</h1>
         <div class="search-container">
             <form action="/batch4">
-                <input type="text" placeholder="Search..." name="name">
-                <button type="submit"><p>Submit</p></button>
+                <input type="text" placeholder="Search..." name="name" id="input">
+                <button type="submit" id="submit"><p>Submit</p></button>
             </form>
         </div>
     </div>
@@ -30,7 +30,7 @@
             <p>Date of birth: </p>
             <p>Email: </p>
             {% else %}
-            <p>Name:  {{ result[0]['name'] }}</p>
+             <p>Name: {{ result[0]['name'] }}</p>
             <p>Sex: {{ result[0]['sex'] }}</p>
             <p>Roll. No: {{ result[0]['roll_no'] }} </p>
             <p>Date of birth: {{ result[0]['date_of_birth'] }}</p>
