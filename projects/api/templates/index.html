@@ -24,17 +24,17 @@
     <div class="student_info">
         <div class="info">
             {% if not result %}
-            <p>Name: </p>
-            <p>Sex: </p>
-            <p>Roll. No:  </p>
-            <p>Date of birth: </p>
-            <p>Email: </p>
+            <p><b>Name:</b> </p>
+            <p><b>Sex:</b> </p>
+            <p><b>Roll. No:</b>  </p>
+            <p><b>Date of birth:</b> </p>
+            <p><b>Email:</b> </p>
             {% else %}
-             <p>Name: {{ result[0]['name'] }}</p>
-            <p>Sex: {{ result[0]['sex'] }}</p>
-            <p>Roll. No: {{ result[0]['roll_no'] }} </p>
-            <p>Date of birth: {{ result[0]['date_of_birth'] }}</p>
-            <p>Email: {{ result[0]['email'] }}</p>
+             <p><b>Name:</b> {{ result[0]['name'] }}</p>
+            <p><b>Sex:</b> {{ result[0]['sex'] }}</p>
+            <p><b>Roll. No:</b> {{ result[0]['roll_no'] }} </p>
+            <p><b>Date of birth:</b> {{ result[0]['date_of_birth'] }}</p>
+            <p><b>Email:</b> {{ result[0]['email'] }}</p>
             {% endif %}
         </div>
     </div>

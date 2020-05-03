@@ -41,17 +41,13 @@ def index():
 def home():
     return "<h1>Distant Reading Archive</h1><p>This site is a prototype API for distant reading of science fiction novels.</p>"
 
-@app.route('/batch4/all', methods=['GET'])
-def get_all_students():
-    return jsonify(batch_4)
-
 @app.route('/batch4', methods=['GET'])
 def batch4_name():
     result = []
     if 'name' in request.args:
         name = request.args['name']
     else:
-        return  "Woops! Sorry the name is not in the system yet :P"
+        result.append("Woops! Sorry the name is not in the system yet :P")
 
     for i in range (0,len(batch_4)):
         if batch_4[i]['name'].lower() == name.lower():
